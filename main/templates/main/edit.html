@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+    <h1>Edit Student</h1>
+    <form method="post">
+        {% csrf_token %}
+        Name: <input type="text" name="name" value="{{ student.name }}" required><br><br>
+        Subject 1: <input type="number" name="subject1" value="{{ student.subject1 }}" required><br><br>
+        Subject 2: <input type="number" name="subject2" value="{{ student.subject2 }}" required><br><br>
+        Subject 3: <input type="number" name="subject3" value="{{ student.subject3 }}" required><br><br>
+        <button type="submit">Save Changes</button>
+    </form>
+    <br>
+    <a href="{% url 'report' %}">Back to Report</a>
+</body>
+</html>
