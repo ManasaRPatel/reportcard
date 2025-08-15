@@ -1,4 +1,6 @@
---Report Card Web App--
+---Report Card Web App---
+
+
 A simple Django-based web application to manage student report cards.
 Users can add, view, edit, and delete student records, making it easy for teachers and administrators to keep track of academic performance.
 
